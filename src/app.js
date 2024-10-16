@@ -9,3 +9,7 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+app.get('/tasks', (req, res) => {
+    res.json([{ id: 1, task: 'Learn Docker' }]);
+  });
+  
